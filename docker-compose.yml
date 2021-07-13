@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  sxm:
+    build: .
+    environment:
+      SXM_USERNAME: ${SXM_USERNAME}
+      SXM_PASSWORD: ${SXM_PASSWORD}
+    ports:
+      - "127.0.0.1:9999:9999"
